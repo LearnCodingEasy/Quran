@@ -5,6 +5,9 @@
 2. Css
 3. Javascript
 
+# Api
+1. mp3quran [Show](https://mp3quran.net/eng/api)
+
 
 # Website
 Link [Show](https://learncodingeasy.github.io/Quran/index.html)
