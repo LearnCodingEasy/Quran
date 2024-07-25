@@ -134,3 +134,15 @@ function playSurah(surahmp3) {
   // console.log('audioPlayer.src: ', audioPlayer.src);
   audioPlayer.play();
 }
+
+function playLive(chanel) {
+  if (Hls.isSupported()) {
+    var video = document.getElementById("videoLive");
+    var hls = new Hls();
+    hls.loadSource(`${chanel}`);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, function() {
+      video.play();
+    });
+  }
+}
